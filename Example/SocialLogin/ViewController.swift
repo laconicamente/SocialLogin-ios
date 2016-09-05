@@ -40,10 +40,8 @@ class ViewController: UIViewController, SocialLoginDelegate {
   
   func socialLoginDidAuthenticatedWithService(service:Service , accessToken: String, refreshToken:String, rawState:String){
   
-    print("AWESOME PRINT", accessToken, "---", refreshToken, rawState)
+    print("TOKENS PRINT", accessToken, "---", refreshToken, rawState)
     
-    
-    print("finishCallback")
   }
   
   
@@ -54,6 +52,8 @@ class ViewController: UIViewController, SocialLoginDelegate {
   func socialLoginViewDidPressLoginButtonWith(username:String?, password:String?){
     print("pressed", username, password)
   }
-  func socialLoginShouldDismissAfterLoginbutton()->Bool{ return false}
+  func socialLoginShouldDismissAfterLoginbutton()->Bool{
+    return false
+  }
 
 }
