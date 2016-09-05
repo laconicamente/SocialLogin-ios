@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Md-vo-uiV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="iA2-eg-Vpb">
+            <objects>
+                <viewController storyboardIdentifier="blank" id="PnL-UA-164" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qxs-cs-D2I"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dhs-a3-93w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gFg-Xx-w9g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="HJD-wb-Hci"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLV-nq-Kkw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154" y="529"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="KWv-Fh-mIo">
+            <objects>
+                <viewController id="afV-o6-qrP" customClass="AuthViewController" customModule="SocialLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hLl-Kt-kbx"/>
+                        <viewControllerLayoutGuide type="bottom" id="rpF-sd-5t7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ODo-C1-ID2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouT-VK-w65">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="h3h-OC-gjU" kind="embed" id="OBZ-Of-eol"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ouT-VK-w65" firstAttribute="leading" secondItem="ODo-C1-ID2" secondAttribute="leadingMargin" constant="-20" id="7LL-A7-ZLc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ouT-VK-w65" secondAttribute="trailing" constant="-20" id="YFJ-aD-MwI"/>
+                            <constraint firstItem="ouT-VK-w65" firstAttribute="top" secondItem="ODo-C1-ID2" secondAttribute="topMargin" id="nfh-sr-ld8"/>
+                            <constraint firstItem="ouT-VK-w65" firstAttribute="bottom" secondItem="ODo-C1-ID2" secondAttribute="bottomMargin" id="zuU-wK-h8k"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="PdP-q3-3ln"/>
+                    <connections>
+                        <outlet property="containerView" destination="ouT-VK-w65" id="8e5-zs-W6m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldc-xE-0oM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="-246"/>
+        </scene>
+        <!--Login Tab Bar Controller-->
+        <scene sceneID="wiL-99-1nP">
+            <objects>
+                <tabBarController storyboardIdentifier="tabbar" id="5Md-vo-uiV" customClass="LoginTabBarController" customModule="SocialLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="XTY-N3-Gmh" customClass="YALCustomHeightTabBar">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="afV-o6-qrP" kind="relationship" relationship="viewControllers" id="UIp-0C-iU6"/>
+                        <segue destination="PnL-UA-164" kind="relationship" relationship="viewControllers" id="wMw-bT-BXo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1aN-VZ-wt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154" y="-246"/>
+        </scene>
+        <!--Services Table View Controller-->
+        <scene sceneID="GQM-Sf-GzJ">
+            <objects>
+                <tableViewController id="aje-lp-TH6" customClass="ServicesTableViewController" customModule="SocialLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" id="aRR-fy-SXk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="150" id="83f-db-HLI" customClass="ServiceCell" customModule="SocialLogin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="83f-db-HLI" id="Mmf-Wg-9vI">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudrailLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Ek-iL-Pin">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7Ek-iL-Pin" secondAttribute="trailing" constant="-8" id="BHj-jy-J11"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7Ek-iL-Pin" secondAttribute="bottom" constant="-8" id="Ede-o0-gA4"/>
+                                        <constraint firstItem="7Ek-iL-Pin" firstAttribute="top" secondItem="Mmf-Wg-9vI" secondAttribute="topMargin" constant="-8" id="cBD-7I-9XJ"/>
+                                        <constraint firstItem="7Ek-iL-Pin" firstAttribute="leading" secondItem="Mmf-Wg-9vI" secondAttribute="leadingMargin" constant="-8" id="etK-JF-nkX"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="serviceImage" destination="7Ek-iL-Pin" id="N36-Tg-XSb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aje-lp-TH6" id="yGZ-46-6gC"/>
+                            <outlet property="delegate" destination="aje-lp-TH6" id="KeA-Hp-Lbp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="prK-Xq-o1e"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcN-7W-2v4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="-1156"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Wkx-Cl-Tft">
+            <objects>
+                <viewController id="h3h-OC-gjU" customClass="LoginViewController" customModule="SocialLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4xi-1F-A75"/>
+                        <viewControllerLayoutGuide type="bottom" id="het-sD-ejz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bAI-CT-kpk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudrailLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="O8u-vT-STJ">
+                                <rect key="frame" x="236" y="20" width="128" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.68627450980392157" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O8u-vT-STJ" secondAttribute="height" multiplier="1:1" id="a3J-p6-MPL"/>
+                                    <constraint firstAttribute="width" constant="128" id="vNo-cT-c8a"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="64"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hs5-my-N6O">
+                                <rect key="frame" x="175" y="233" width="250" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.68627450980000004" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="g05-Dp-iuV"/>
+                                    <constraint firstAttribute="width" constant="250" id="s6Y-Sx-Bsj"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username or email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfL-KI-Zt2">
+                                <rect key="frame" x="175" y="190" width="250" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.68627450980000004" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZB3-jg-A1m"/>
+                                    <constraint firstAttribute="width" constant="250" id="nJ5-8V-kbi"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18E-St-Ehw">
+                                <rect key="frame" x="255" y="288" width="90" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.68627450980000004" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="av8-QD-GjJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="jOU-uU-xuT"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="h3h-OC-gjU" eventType="touchUpInside" id="rrG-Qh-keW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hs5-my-N6O" firstAttribute="top" secondItem="tfL-KI-Zt2" secondAttribute="bottom" constant="13" id="3Ds-3J-jUz"/>
+                            <constraint firstItem="tfL-KI-Zt2" firstAttribute="centerX" secondItem="bAI-CT-kpk" secondAttribute="centerX" id="Ld5-ad-65D"/>
+                            <constraint firstItem="tfL-KI-Zt2" firstAttribute="top" secondItem="O8u-vT-STJ" secondAttribute="bottom" constant="42" id="Z3C-dA-W7c"/>
+                            <constraint firstItem="18E-St-Ehw" firstAttribute="top" secondItem="hs5-my-N6O" secondAttribute="bottom" constant="25" id="eMD-Mp-JG8"/>
+                            <constraint firstItem="O8u-vT-STJ" firstAttribute="top" secondItem="4xi-1F-A75" secondAttribute="bottom" constant="20" id="hCD-En-g9r"/>
+                            <constraint firstItem="O8u-vT-STJ" firstAttribute="centerX" secondItem="bAI-CT-kpk" secondAttribute="centerX" id="lMC-jT-DJN"/>
+                            <constraint firstItem="hs5-my-N6O" firstAttribute="centerX" secondItem="bAI-CT-kpk" secondAttribute="centerX" id="xCZ-2C-wpl"/>
+                            <constraint firstItem="18E-St-Ehw" firstAttribute="centerX" secondItem="bAI-CT-kpk" secondAttribute="centerX" id="yYH-d0-i85"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="logoImageView" destination="O8u-vT-STJ" id="Bha-Se-y2N"/>
+                        <outlet property="passwordTextField" destination="hs5-my-N6O" id="8nV-JK-Qwq"/>
+                        <outlet property="userNameTextView" destination="tfL-KI-Zt2" id="wf1-kZ-uyl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgw-gE-yz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="-255"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="FpP-ln-8yq">
+            <objects>
+                <navigationController storyboardIdentifier="navigation" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="iKN-Aw-PEs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="qjO-Kl-GPU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ejN-Ve-5gS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aje-lp-TH6" kind="relationship" relationship="rootViewController" id="Qbc-kG-wQM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWF-lY-hH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154" y="-1156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudrailLogo.png" width="1148" height="940"/>
+    </resources>
+</document>
