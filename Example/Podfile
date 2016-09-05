@@ -1,5 +1,5 @@
 use_frameworks!
-
+  pod 'FoldingTabBar', :git => 'https://github.com/fel-cesar/FoldingTabBar.iOS.git' , :commit => '9809b69'
 target 'SocialLogin_Example' do
   pod 'SocialLogin', :path => '../'
 
