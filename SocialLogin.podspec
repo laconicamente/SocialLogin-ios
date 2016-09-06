@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 DESC
 
   s.homepage         = 'http://cloudrail.com/'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+   s.screenshots     = 'https://s14.postimg.io/fh4su5bap/Simulator_Screen_Shot_06_Sep_2016_15_23_28.png', 'https://s14.postimg.io/58cbobn8x/Simulator_Screen_Shot_06_Sep_2016_15_23_51.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Felipe Cesar' => 'felipe.cesar@cloudrail.com' }
   s.source           = { :git => 'https://github.com/CloudRail/SocialLogin-ios.git', :tag => s.version.to_s }

@@ -27,7 +27,7 @@ class ViewController: UIViewController, SocialLoginDelegate {
     SocialLogin.addServiceNamed("Instagram", clientID:"CLIENT_ID", clientSecret: "CLIENT_SECRET")
     SocialLogin.addServiceNamed("Twitter", clientID: "cv7AjsB3dGd9kNwP8WTKMIROs", clientSecret: "YecLEn7vaEbgKiagx2xzEAAkfYgfesWu7dtQ31EcrAMxiVa01T")
 
-    SocialLogin.shouldPresentNativeLogin = true
+    SocialLogin.shouldPresentNativeLogin = false
     SocialLogin.delegate = self
     SocialLogin.performSegueToSocialLoginVC(self);
     
