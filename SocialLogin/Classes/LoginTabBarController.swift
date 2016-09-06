@@ -87,6 +87,7 @@ class LoginTabBarController: YALFoldingTabBarController, YALTabBarDelegate,UITab
   
   public func tabBarDidSelectExtraLeftItem(tabBar: YALFoldingTabBar!){
     self.setTabBarVisible(false, animated: true);
+    self.serviceName = SocialLoginController.sharedInstance.services[0]
     self.service = SocialLoginController.sharedInstance.servicesInstances[0]
     self.triggerAuthentication()
     
@@ -94,6 +95,7 @@ class LoginTabBarController: YALFoldingTabBarController, YALTabBarDelegate,UITab
   
   public func tabBarDidSelectExtraRightItem(tabBar: YALFoldingTabBar!){
     self.setTabBarVisible(false, animated: true);
+    self.serviceName = SocialLoginController.sharedInstance.services[1]
     self.service = SocialLoginController.sharedInstance.servicesInstances[1]
     self.triggerAuthentication()
   }
