@@ -1,5 +1,11 @@
 # SocialLogin
 
+## Screenshots
+<img src="https://s14.postimg.io/3qqvcrii7/Simulator_Screen_Shot_06_Sep_2016_15_22_42.png" width="200" height="360">
+<img src="https://s14.postimg.io/fh4su5bap/Simulator_Screen_Shot_06_Sep_2016_15_23_28.png" width="200" height="360">
+<img src="https://s14.postimg.io/58cbobn8x/Simulator_Screen_Shot_06_Sep_2016_15_23_51.png" width="200" height="360">
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first. Then open the `.xcworkspace` file inside the example directory. Build and run the project.
