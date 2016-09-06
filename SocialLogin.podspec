@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = 'SocialLogin'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Social Login uses CloudRail SDK with the objective to ease authentications processes'
 
   s.description      = <<-DESC
   Social Login uses CloudRail SDK with the objective to ease authentications processes in services such Facebook, Instagram, Twitter, linkedIn, GooglePlus, Yahoo, GitHub, Slack, MicrosoftLive. Only the client ID and client secret are needed.
 DESC
 
-  s.homepage         = 'http://cloudrail.com/'
+  s.homepage         = 'https://github.com/CloudRail/SocialLogin-ios'
    s.screenshots     = 'https://s14.postimg.io/fh4su5bap/Simulator_Screen_Shot_06_Sep_2016_15_23_28.png', 'https://s14.postimg.io/58cbobn8x/Simulator_Screen_Shot_06_Sep_2016_15_23_51.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Felipe Cesar' => 'felipe.cesar@cloudrail.com' }
