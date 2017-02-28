@@ -22,7 +22,7 @@ DESC
   }
 
   s.frameworks = 'UIKit'
-  s.dependency 'cloudrail-si-ios-sdk', '~> 3.2.4'
+  s.dependency 'cloudrail-si-ios-sdk', '~> 5.4.4'
   s.dependency 'FoldingTabBar'
 
 
